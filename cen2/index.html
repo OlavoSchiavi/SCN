@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagens/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9HRXJFUS9NQUYtbFBHRXJFUS8xL3AucG5n.jpeg" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <div class="barra-pesquisa">
+                <input type="text" id="caixaDePesquisa" placeholder="Digite o ID" onkeydown="if (event.key === 'Enter') pesquisar()">
+            </div>
+        </nav>
+    </header>
+    <Main>
+        <section id="Computação_em_nuvem">
+            <!--Computação em nuvem-->
+            <div id="Computação_em_nuvem">
+                <h1>Computação em Nuvem</h1>
+            </div>
+            <div class="conceito">
+                <h2>Conceito</h2> 
+                <p>A computação em nuvem é um modelo que permite acesso on-demand a recursos de computação, como armazenamento, servidores, redes e outros, por meio da internet, sem a necessidade de gerenciar infraestrutura física local.</p>
+
+
+                <h3>Vantagens</h3>
+                <p>Escalabilidade: Capacidade de aumentar ou diminuir recursos conforme necessário.<br>
+                <p>Flexibilidade: Possibilidade de acessar os recursos de qualquer lugar, a qualquer momento.<br>
+                Redução de custos: Eliminação da necessidade de investimentos em hardware e manutenção de infraestrutura.<br>
+                Atualizações automáticas: Fornecedores de nuvem geralmente cuidam das atualizações de software e segurança.</p>
+
+
+                <h3>Desvantagens</h3>
+                <p>Dependência de internet: A disponibilidade dos recursos está sujeita à conexão com a internet.<br>
+                Segurança: Questões relacionadas à privacidade e segurança dos dados na nuvem.<br>
+                Personalização limitada: Algumas soluções podem não oferecer a flexibilidade necessária para personalização.</p>
+            </div>
+            <!--Computação em nuvem-->
+
+        </section>
+
+        
+
+
+
+
+
+
+
+
+        <!--Conteudo em bloco-->
+        <div class="container">
+            <div id="iaas" class="bloco" onclick="toggleBloco(this)">
+                <h2>IaaS (Infrastructure as a Service)</h2>
+                <div class="conteudo" id="Iaas">
+                    <!--IaaS-->
+                    <h2>Conceito</h2> 
+                    <p>IaaS é um modelo de computação em nuvem em que os usuários podem alugar recursos de infraestrutura, como servidores virtuais, armazenamento e redes, fornecidos pelo provedor de nuvem.</p>
+                    <h3>Vantagens</h3>
+                        <P>Flexibilidade para configurar e gerenciar recursos de infraestrutura conforme necessário.<br>
+                        Escalabilidade para aumentar ou diminuir recursos de acordo com a demanda.<br>
+                        Redução de custos em comparação com a compra e manutenção de hardware físico.</p>
+                    <h3>Desvantagens</h3>
+                        <p>Responsabilidade do usuário em gerenciar e manter o sistema operacional e aplicativos instalados na infraestrutura fornecida.<br>
+                        Necessidade de expertise técnica para configurar e gerenciar a infraestrutura de forma eficiente.</p>
+                    <!--IaaS-->
+                </div>
+            </div>
+            <div id="paas" class="bloco" onclick="toggleBloco(this)">
+                <h2>PaaS (Platform as a Service)</h2>
+                <div class="conteudo" id="Paas">
+                    <!--PaaS-->
+                    <h2>Conceito</h2> 
+                    <p>PaaS é um modelo de computação em nuvem que fornece uma plataforma completa de desenvolvimento e implantação de aplicativos, incluindo ferramentas, bibliotecas e serviços necessários para desenvolver, testar e implantar aplicativos.</p>
+                    <h3>Vantagens</h3>
+                        <p>Facilita o desenvolvimento de aplicativos, fornecendo uma plataforma pronta para uso.<br>
+                        Automatiza tarefas de configuração, como provisionamento de servidores e gerenciamento de infraestrutura.<br>
+                        Reduz o tempo e o esforço necessários para implantar aplicativos.</p>
+                    <h3>Desvantagens</h3>
+                        <p>Restrições na escolha de linguagens de programação e ferramentas, dependendo da plataforma.<br>
+                        Limitações de personalização em comparação com infraestrutura própria.</p>
+                    <!--PaaS-->
+                </div>
+            </div>
+            <div id="saas" class="bloco" onclick="toggleBloco(this)">
+                <h2>SaaS (Software as a Service)</h2>
+                <div class="conteudo" id="Saas">
+                    <!--SaaS-->
+                    <p>Conceito: SaaS é um modelo de entrega de software em que os aplicativos são hospedados por um provedor de nuvem e acessados via internet, geralmente por meio de um navegador web.</p>
+                    <h3>Vantagens:</h3>
+                        <p>Acesso fácil aos aplicativos de qualquer lugar, a qualquer momento, com apenas uma conexão à internet.<br>
+                        Atualizações automáticas de software pelo provedor de SaaS, eliminando a necessidade de atualizações manuais.<br>
+                        Redução de custos com licenças de software e manutenção de infraestrutura.</p>
+                    <h3>Desvantagens:</h3>
+                        <p>Dependência da disponibilidade e desempenho da conexão com a internet.<br>
+                        Personalização limitada em comparação com software localmente instalado.<br>
+                        Questões de segurança e privacidade dos dados armazenados na nuvem.</p>
+                    <!--SaaS-->   
+                </div>
+            </div>
+        </div>
+        <!--Conteudo em bloco-->
+
+        <section id="Tipos_de_nuvem">
+            <!--Tipo de nuvem-->
+            <h2>Tipos de Nuvens</h2>
+            <P>Nuvem Pública: Infraestrutura de nuvem mantida e operada por um provedor de serviços de nuvem, acessível ao público em geral. Os recursos são compartilhados entre vários clientes.<br>
+            Nuvem Privada: Infraestrutura de nuvem dedicada a uma única organização, geralmente mantida internamente ou por um provedor de serviços de nuvem, oferecendo mais controle sobre segurança e conformidade.<br>
+            Nuvem Híbrida: Combinação de nuvens públicas e privadas, permitindo que dados e aplicativos sejam compartilhados entre elas. Isso oferece flexibilidade para atender a diferentes requisitos de segurança, conformidade e desempenho.</P>
+            <!--Tipo de nuvem-->
+        </section>
+    </Main>
+    <footer>
+
+    </footer>
+</body>
+</html>
