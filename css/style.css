@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #b6a960;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 600px;
+    margin-right: 200px;
+}
+.conceito{
+    max-width: 1000px;
+    padding: 40px;
+    
+}
+.conceito_text{
+    text-align: left;
+    border: 1px dashed black;
+    padding: 10px;
+    border-radius: 20px;
+}
+.barra-pesquisa input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+}
+.texto-central {
+    text-align: center;
+    margin: 0;
+    display: none;
+}
+.container {
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+}
+.bloco {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    flex-grow: 1;
+    color: #f0f0f0;
+}
+.bloco:hover, .bloco.active {
+    flex: 3;
+}
+.conteudo {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.bloco.active .conteudo {
+    display: block;
+}
+@media only screen and (max-width: 750px) {
+    .bloco {
+        flex-basis: 100%;
+        overflow: visible;
+        margin-bottom: 0;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .barra-pesquisa {
+        margin-top: 10px;
+        width: 200px;
+        margin-right: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .barra-pesquisa input[type="text"] {
+        padding: 8px;
+    }
+    .texto-central {
+        display: none;
+    }
+}
+#iaas, #Iaas{
+ background-color: #dbcb6e;
+}
+#paas, #Paas{
+    background-color: #b6a960;
+}
+#saas, #Saas{
+    background-color: #dbcb6e;
+}
+footer{
+    background-color: #b6a960;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footo:hover {
+    width: 220px;
+    height: 220px;
+}
+.footo {
+    width: 200px;
+    height: 200px;
+    background-color: #dbcb6e;
+    margin: 20px;
+    display: inline-block;
+    overflow: hidden; /* Oculta conteúdo que extrapola os limites do bloco */
+    transition: width 0.3s, height 0.3s; /* Adiciona transição suave */
+    border: 1px solid #000;
+
+    text-align: center;
+    margin: 10px 0;
+    color: black;
+}
+.footo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Redimensiona a imagem para preencher o contêiner */
+}
+.footo p {
+    text-align: center;
+    margin: 10px 0;
+    color: black;
+    
+}
+.foot{
+
+    background-color: #b6a960;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+#Participantes{
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+    font-size: 30px;
+}
